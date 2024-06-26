@@ -12,7 +12,7 @@ import App from "./page/app.js";
 export default function Home() {
   return (
     
-    <Login></Login>
+    <User></User>
     
   );
 }
