@@ -37,8 +37,8 @@ export default function Login() {
       "Password": password
     };
     console.log(requestData)
-    const response =  await axios.post('/api/Member/ValidateUser', requestData, {headers: {'Content-Type': 'application/json',
-    }});
+    
+    const response =  await axios.post('/api/Member/ValidateUser', requestData, {headers: {'Content-Type': 'application/json',}});
    
     console.log(response)
     if(response.status === HttpStatusCode.Ok) {
